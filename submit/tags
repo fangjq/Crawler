@@ -1,0 +1,234 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	makefile	/^CC         = cc$/;"	m
+CELL_OCCUPIED	hash.c	190;"	d	file:
+CFLAGS	makefile	/^CFLAGS     = -Wall -pedantic $(DEFINES) $(GDB)$/;"	m
+CLEAR_CELL	hash.c	193;"	d	file:
+CLRBIT	webgraph.c	10;"	d	file:
+DEFINES	makefile	/^DEFINES    = $/;"	m
+DEL_FILE	makefile	/^DEL_FILE   = rm -f $/;"	m
+DO_REALLOC	utils.h	6;"	d
+FOREACH_OCCUPIED_ADJACENT	hash.c	201;"	d	file:
+GDB	makefile	/^GDB        = -g -rdynamic$/;"	m
+GETBIT	webgraph.c	11;"	d	file:
+HASH_H	hash.h	2;"	d
+HASH_MAX_FULLNESS	hash.c	143;"	d	file:
+HASH_POSITION	hash.c	206;"	d	file:
+HASH_RESIZE_FACTOR	hash.c	148;"	d	file:
+HTTP_DEFAULT_PORT	http.c	20;"	d	file:
+HTTP_DEFAULT_PORT	url.c	11;"	d	file:
+HTTP_RESPONSE_MAX_SIZE	http.c	18;"	d	file:
+HTTP_SCHEME	url.c	/^static const char *const HTTP_SCHEME = "http:\/\/";$/;"	v	file:
+INCPATH	makefile	/^INCPATH    = $/;"	m
+INVALID_PTR	hash.c	183;"	d	file:
+INVALID_PTR_CHAR	hash.c	187;"	d	file:
+LFLAGS	makefile	/^LFLAGS     = $/;"	m
+LIBS	makefile	/^LIBS       = -lpthread$/;"	m
+LINK	makefile	/^LINK       = cc$/;"	m
+MAXT_IN_POOL	threadpool.h	12;"	d
+MIN	utils.h	4;"	d
+NEXT_CELL	hash.c	197;"	d	file:
+NUM_THREADS	main.c	12;"	d	file:
+OBJECTS	makefile	/^OBJECTS = main.o \\$/;"	m
+SETBIT	webgraph.c	9;"	d	file:
+SOCK_TIMEOUT	http.c	16;"	d	file:
+SOURCES	makefile	/^SOURCES = main.c \\$/;"	m
+STANDALONE	hash.c	34;"	d	file:
+TARGET	makefile	/^TARGET     = site_analyzer$/;"	m
+UCHAR_MAX	hash.c	185;"	d	file:
+URL_BAD_PORT_NUMBER	url.c	306;"	d	file:
+URL_HAS_SCHEME	url.c	15;"	d	file:
+URL_INVALID_HOST_NAME	url.c	304;"	d	file:
+URL_MISSING_SCHEME	url.c	302;"	d	file:
+URL_NO_ERROR	url.c	300;"	d	file:
+URL_SKIP_SCHEME	url.c	18;"	d	file:
+_HTML_PARSER_H	url_parser.h	2;"	d
+_HTTP_H	http.h	2;"	d
+_STAT_H	stat.h	2;"	d
+_THREADPOOL_H	threadpool.h	2;"	d
+_URL_H	url.h	2;"	d
+_UTILS_H	utils.h	2;"	d
+_WEBGRAPH_H	webgraph.h	2;"	d
+_threadpool	threadpool.c	/^} _threadpool;$/;"	t	typeref:struct:_threadpool_st	file:
+_threadpool_st	threadpool.c	/^typedef struct _threadpool_st {$/;"	s	file:
+arg	threadpool.c	/^    void *arg;$/;"	m	struct:work_st	file:
+body	http.h	/^	char *body;$/;"	m	struct:http_response
+body_len	http.h	/^	int body_len;$/;"	m	struct:http_response
+c_tolower	hash.c	59;"	d	file:
+cell	hash.c	/^struct cell {$/;"	s	file:
+cells	hash.c	/^  struct cell *cells;           \/* contiguous array of cells. *\/$/;"	m	struct:hash_table	typeref:struct:hash_table::cell	file:
+cmp_pointer	hash.c	/^cmp_pointer (const void *ptr1, const void *ptr2)$/;"	f	file:
+cmp_string	hash.c	/^cmp_string (const void *s1, const void *s2)$/;"	f	file:
+content_type	http.h	/^	char *content_type;$/;"	m	struct:http_header
+count	hash.c	/^  int count;                    \/* number of occupied entries. *\/$/;"	m	struct:hash_table	file:
+count	url.h	/^	int count, maxcount;$/;"	m	struct:url_queue
+countof	hash.c	56;"	d	file:
+create_threadpool	threadpool.c	/^threadpool create_threadpool(int num_threads_in_pool)$/;"	f
+cur_urlid	stat.c	/^static long cur_urlid = 0;$/;"	v	file:
+dangling_pages	webgraph.c	/^	unsigned char *dangling_pages;$/;"	m	struct:webgraph	file:
+data	http.h	/^	const char *data;$/;"	m	struct:response
+depth	url.h	/^	int depth;$/;"	m	struct:queue_element
+destroy_threadpool	threadpool.c	/^void destroy_threadpool(threadpool destroyme)$/;"	f
+dispatch	threadpool.c	/^void dispatch(threadpool from_me, dispatch_fn dispatch_to_here,$/;"	f
+dispatch_fn	threadpool.h	/^typedef void (*dispatch_fn)(void *);$/;"	t
+do_work	threadpool.c	/^void *do_work(threadpool p)$/;"	f
+domain	url_parser.h	/^	char *domain;$/;"	m	struct:url
+dont_accept	threadpool.c	/^    int dont_accept;$/;"	m	struct:_threadpool_st	file:
+end	hash.h	/^  void *pos, *end;		\/* private members *\/$/;"	m	struct:__anon1
+establish_connection	http.c	/^int establish_connection(int *fd, char *url, int port)$/;"	f
+extract_urls	url.c	/^struct url_vec *extract_urls(const char *content)$/;"	f
+find_cell	hash.c	/^find_cell (const struct hash_table *ht, const void *key)$/;"	f	file:
+find_last_char	url.c	28;"	d	file:
+free_url_vec	url.c	/^void free_url_vec(struct url_vec *l)$/;"	f
+g_lock	webgraph.c	/^	pthread_mutex_t g_lock;	$/;"	m	struct:webgraph	file:
+get_cur_urlid	stat.c	/^long *get_cur_urlid()$/;"	f
+get_urls	http.c	/^int get_urls()$/;"	f
+graph	main.c	/^static webgraph_handle graph;$/;"	v	file:
+grow_hash_table	hash.c	/^grow_hash_table (struct hash_table *ht)$/;"	f	file:
+hash_function	hash.c	/^  hashfun_t hash_function;$/;"	m	struct:hash_table	file:
+hash_pointer	hash.c	/^hash_pointer (const void *ptr)$/;"	f
+hash_string	hash.c	/^hash_string (const void *key)$/;"	f	file:
+hash_string_nocase	hash.c	/^hash_string_nocase (const void *key)$/;"	f	file:
+hash_table	hash.c	/^struct hash_table {$/;"	s	file:
+hash_table_clear	hash.c	/^hash_table_clear (struct hash_table *ht)$/;"	f
+hash_table_contains	hash.c	/^hash_table_contains (const struct hash_table *ht, const void *key)$/;"	f
+hash_table_count	hash.c	/^hash_table_count (const struct hash_table *ht)$/;"	f
+hash_table_destroy	hash.c	/^hash_table_destroy (struct hash_table *ht)$/;"	f
+hash_table_for_each	hash.c	/^hash_table_for_each (struct hash_table *ht,$/;"	f
+hash_table_get	hash.c	/^hash_table_get (const struct hash_table *ht, const void *key)$/;"	f
+hash_table_get_pair	hash.c	/^hash_table_get_pair (const struct hash_table *ht, const void *lookup_key,$/;"	f
+hash_table_iter_next	hash.c	/^hash_table_iter_next (hash_table_iterator *iter)$/;"	f
+hash_table_iterate	hash.c	/^hash_table_iterate (struct hash_table *ht, hash_table_iterator *iter)$/;"	f
+hash_table_iterator	hash.h	/^} hash_table_iterator;$/;"	t	typeref:struct:__anon1
+hash_table_new	hash.c	/^hash_table_new (int items,$/;"	f
+hash_table_put	hash.c	/^hash_table_put (struct hash_table *ht, const void *key, const void *value)$/;"	f
+hash_table_remove	hash.c	/^hash_table_remove (struct hash_table *ht, const void *key)$/;"	f
+hashfun_t	hash.c	/^typedef unsigned long (*hashfun_t) (const void *);$/;"	t	file:
+head	url.h	/^	struct queue_element *head;$/;"	m	struct:url_queue	typeref:struct:url_queue::queue_element
+header	http.h	/^	http_header_t *header;$/;"	m	struct:http_response
+headers	http.h	/^	const char **headers;$/;"	m	struct:response
+host	url.h	/^	char *host;$/;"	m	struct:url
+http_header	http.h	/^typedef struct http_header$/;"	s
+http_header_t	http.h	/^}http_header_t;$/;"	t	typeref:struct:http_header
+http_resp_header_terminator	http.c	/^static const char *http_resp_header_terminator($/;"	f	file:
+http_response	http.h	/^typedef struct http_response$/;"	s
+http_response_t	http.h	/^}http_response_t;$/;"	t	typeref:struct:http_response
+id_lock	stat.c	/^static pthread_mutex_t id_lock = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+in_links_head	webgraph.c	/^	struct vec_in_links **in_links_head;$/;"	m	struct:webgraph	typeref:struct:webgraph::vec_in_links	file:
+in_links_tail	webgraph.c	/^	struct vec_in_links **in_links_tail;$/;"	m	struct:webgraph	typeref:struct:webgraph::vec_in_links	file:
+ip	url_parser.h	/^	char *ip;$/;"	m	struct:url
+key	hash.c	/^  void *key;$/;"	m	struct:cell	file:
+key	hash.h	/^  void *key, *value;		\/* public members *\/$/;"	m	struct:__anon1
+level	url_parser.h	/^	int level;$/;"	m	struct:url
+main	hash.c	/^main (void)$/;"	f
+main	main.c	/^int main(int argc, char *argv[])$/;"	f
+make_nocase_string_hash_table	hash.c	/^make_nocase_string_hash_table (int items)$/;"	f
+make_string_hash_table	hash.c	/^make_string_hash_table (int items)$/;"	f
+max_size	webgraph.c	/^	long max_size;$/;"	m	struct:webgraph	file:
+maxcount	url.h	/^	int count, maxcount;$/;"	m	struct:url_queue
+next	threadpool.c	/^    struct work_st *next;$/;"	m	struct:work_st	typeref:struct:work_st::work_st	file:
+next	url.h	/^	struct queue_element *next;$/;"	m	struct:queue_element	typeref:struct:queue_element::queue_element
+next	url.h	/^	struct url_vec *next;$/;"	m	struct:url_vec	typeref:struct:url_vec::url_vec
+next	webgraph.c	/^	struct vec_in_links *next;$/;"	m	struct:vec_in_links	typeref:struct:vec_in_links::vec_in_links	file:
+num_out_links	webgraph.c	/^	long *num_out_links;$/;"	m	struct:webgraph	file:
+num_threads	threadpool.c	/^    int num_threads;	\/* number of active threads *\/$/;"	m	struct:_threadpool_st	file:
+pagerank	webgraph.c	/^void pagerank(webgraph_handle handle,$/;"	f
+parse_errors	url.c	/^static const char *parse_errors[] = {$/;"	v	file:
+path	url.h	/^	char *path;$/;"	m	struct:url
+path	url_parser.h	/^	char *path;$/;"	m	struct:url
+path_end	url.c	/^static const char *path_end(const char *url)$/;"	f	file:
+poll_internal	connect.c	/^static int poll_internal(int fd, int wf, double timeout)$/;"	f	file:
+port	url.h	/^	int port;$/;"	m	struct:url
+port	url_parser.h	/^	int port;$/;"	m	struct:url
+pos	hash.h	/^  void *pos, *end;		\/* private members *\/$/;"	m	struct:__anon1
+pr	webgraph.c	/^	double *pr;	$/;"	m	struct:webgraph	file:
+prime_offset	hash.c	/^  int prime_offset;             \/* the offset of the current prime in$/;"	m	struct:hash_table	file:
+prime_size	hash.c	/^prime_size (int size, int *prime_offset)$/;"	f	file:
+print_hash	hash.c	/^print_hash (struct hash_table *sht)$/;"	f
+q_empty	threadpool.c	/^    pthread_cond_t q_empty;$/;"	m	struct:_threadpool_st	file:
+q_not_empty	threadpool.c	/^    pthread_cond_t q_not_empty;	\/* non empty and empty condidtion vairiables *\/$/;"	m	struct:_threadpool_st	file:
+qhead	threadpool.c	/^    work_t *qhead;		\/* queue head pointer *\/$/;"	m	struct:_threadpool_st	file:
+qlock	threadpool.c	/^    pthread_mutex_t qlock;		\/* lock on the queue list *\/$/;"	m	struct:_threadpool_st	file:
+qlock	url.h	/^	pthread_mutex_t qlock;$/;"	m	struct:url_queue
+qsize	threadpool.c	/^    int qsize;			\/* number in the queue *\/$/;"	m	struct:_threadpool_st	file:
+qtail	threadpool.c	/^    work_t *qtail;		\/* queue tail pointer *\/$/;"	m	struct:_threadpool_st	file:
+queue	main.c	/^static struct url_queue *queue = NULL; $/;"	v	typeref:struct:url_queue	file:
+queue_element	url.h	/^struct queue_element$/;"	s
+read_http_resp_head	http.c	/^char *read_http_resp_head(int fd)$/;"	f
+read_resp_body	http.c	/^int read_resp_body(int fd, long toread, char *buf)$/;"	f
+referer	url.h	/^	const char *referer;$/;"	m	struct:queue_element
+resize_threshold	hash.c	/^  int resize_threshold;         \/* after size exceeds this number of$/;"	m	struct:hash_table	file:
+resp_free	http.c	/^void resp_free(response_t *resp)$/;"	f
+resp_header_copy	http.c	/^int resp_header_copy(const response_t *resp, $/;"	f
+resp_header_get	http.c	/^static int resp_header_get(const response_t *resp, const char *name,$/;"	f	file:
+resp_header_locate	http.c	/^static int resp_header_locate(const response_t *resp, $/;"	f	file:
+resp_new	http.c	/^response_t *resp_new(const char *head)$/;"	f
+resp_status	http.c	/^int resp_status(const response_t *resp)$/;"	f
+response	http.h	/^typedef struct response{$/;"	s
+response_t	http.h	/^}response_t;$/;"	t	typeref:struct:response
+retrieve_webpage	main.c	/^void retrieve_webpage(void *arg)$/;"	f
+rewrite_shorthand_url	url.c	/^char *rewrite_shorthand_url(const char *url)$/;"	f
+routine	threadpool.c	/^    void (*routine) (void *);$/;"	m	struct:work_st	file:
+select_fd	connect.c	/^int select_fd(int fd, double maxtime, int wait_for)$/;"	f
+send_request	http.c	/^int send_request(int fd, url_t *u)$/;"	f
+shutdown	threadpool.c	/^    int shutdown;$/;"	m	struct:_threadpool_st	file:
+size	hash.c	/^  int size;                     \/* size of the array. *\/$/;"	m	struct:hash_table	file:
+size	webgraph.c	/^	long size;$/;"	m	struct:webgraph	file:
+sock_peek	http.c	/^static int sock_peek(int fd, char *buf, int bufsize, double timeout)$/;"	f	file:
+sock_read	http.c	/^static int sock_read(int fd, char *buf, int bufsize, double timeout)$/;"	f	file:
+status_code	http.h	/^	int status_code;$/;"	m	struct:http_header
+step	webgraph.c	/^static void step(webgraph_handle handle, $/;"	f	file:
+strdupdelim	utils.c	/^char *strdupdelim(const char *beg, const char *end)$/;"	f
+string_cmp_nocase	hash.c	/^string_cmp_nocase (const void *s1, const void *s2)$/;"	f	file:
+strpbrk_or_eos	utils.c	/^char *strpbrk_or_eos(const char *s,$/;"	f
+tail	url.h	/^	struct queue_element *tail;$/;"	m	struct:url_queue	typeref:struct:url_queue::queue_element
+test_function	hash.c	/^  testfun_t test_function;$/;"	m	struct:hash_table	file:
+testfun_t	hash.c	/^typedef int (*testfun_t) (const void *, const void *);$/;"	t	file:
+threadpool	threadpool.h	/^typedef void *threadpool;$/;"	t
+threads	threadpool.c	/^    pthread_t *threads;	\/* pointer to threads *\/$/;"	m	struct:_threadpool_st	file:
+uintptr_t	hash.c	/^   typedef unsigned long uintptr_t;$/;"	t	file:
+uri_merge	url.c	/^char *uri_merge(const char *base, const char *link)$/;"	f
+url	url.h	/^	char *url;$/;"	m	struct:url
+url	url.h	/^	char *url;$/;"	m	struct:url_vec
+url	url.h	/^	const char *url;$/;"	m	struct:queue_element
+url	url.h	/^typedef struct url$/;"	s
+url	url_parser.h	/^typedef struct url$/;"	s
+url_blacklist	webgraph.c	/^	struct hash_table *url_blacklist;$/;"	m	struct:webgraph	typeref:struct:webgraph::hash_table	file:
+url_dequeue	url.c	/^int url_dequeue(struct url_queue *queue,$/;"	f
+url_enqueue	url.c	/^void url_enqueue(struct url_queue *queue, $/;"	f
+url_error	url.c	/^const char *url_error(int error_code)$/;"	f
+url_free	url.c	/^void url_free(url_t *url)$/;"	f
+url_get_queue_count	url.c	/^int url_get_queue_count(struct url_queue *queue)$/;"	f
+url_id	webgraph.c	/^	long url_id;$/;"	m	struct:vec_in_links	file:
+url_parse	url.c	/^url_t *url_parse(const char *url, int *error)$/;"	f
+url_queue	url.h	/^struct url_queue$/;"	s
+url_queue_delete	url.c	/^void url_queue_delete(struct url_queue *queue)$/;"	f
+url_queue_new	url.c	/^struct url_queue *url_queue_new(void)$/;"	f
+url_sanity_check	url.c	/^int url_sanity_check(const char *url)$/;"	f
+url_simplify	url.c	/^int url_simplify(char *url)$/;"	f
+url_string	webgraph.c	/^	const char **url_string;$/;"	m	struct:webgraph	file:
+url_t	url.h	/^}url_t;$/;"	t	typeref:struct:url
+url_t	url_parser.h	/^}url_t;$/;"	t	typeref:struct:url
+url_vec	url.h	/^struct url_vec$/;"	s
+value	hash.c	/^  void *value;$/;"	m	struct:cell	file:
+value	hash.h	/^  void *key, *value;		\/* public members *\/$/;"	m	struct:__anon1
+vec_in_links	webgraph.c	/^struct vec_in_links$/;"	s	file:
+vec_in_links_free	webgraph.c	/^void vec_in_links_free(struct vec_in_links *l)$/;"	f
+webgraph	webgraph.c	/^struct webgraph$/;"	s	file:
+webgraph_add_link	webgraph.c	/^void webgraph_add_link($/;"	f
+webgraph_add_url	webgraph.c	/^void webgraph_add_url($/;"	f
+webgraph_contains	webgraph.c	/^int webgraph_contains($/;"	f
+webgraph_delete	webgraph.c	/^void webgraph_delete(webgraph_handle handle)$/;"	f
+webgraph_get_size	webgraph.c	/^long webgraph_get_size(webgraph_handle handle)$/;"	f
+webgraph_handle	webgraph.h	/^typedef void *webgraph_handle;$/;"	t
+webgraph_new	webgraph.c	/^webgraph_handle webgraph_new(long size)$/;"	f
+work_st	threadpool.c	/^typedef struct work_st {$/;"	s	file:
+work_t	threadpool.c	/^} work_t;$/;"	t	typeref:struct:work_st	file:
+xfree	hash.c	54;"	d	file:
+xmalloc	hash.c	53;"	d	file:
+xnew	hash.c	51;"	d	file:
+xnew_array	hash.c	52;"	d	file:
